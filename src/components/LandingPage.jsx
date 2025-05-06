@@ -1,0 +1,55 @@
+import React from 'react'
+import Profile1 from '../assets/home/profile-1.svg'
+import HTML from '../assets/home/html.svg'
+import Ai from '../assets/home/ai.svg'
+import arrow from '../assets/home/arrow.svg'
+import {motion} from 'framer-motion'
+function LandingPage() {
+  return (
+  <>
+     <section className='landing-page-section'>
+          <div className='landing-page-container'>
+          <motion.article
+          initial={{opacity:0, x:-20}}
+          animate={{opacity:1, x:0}}
+          transition={{duration:1, delay:0.2}}
+          viewport={{once:true}}
+          >
+            <label >Ivan Dale Clarion</label>
+            <p>Hello! I am Ivan and welcome to my portfolio.</p>
+            <button>Know More</button>
+          </motion.article>
+          <motion.img src={Profile1} alt="" 
+          initial={{opacity:0, y:20}}
+          animate={{opacity:1, y:0}}
+          transition={{duration:1, delay:0.7}}
+          viewport={{once:true}}
+          />
+          <motion.div className='landing-quick-view'
+          initial={{opacity:0, x:20}}
+          animate={{opacity:1, x:0}}
+          transition={{duration:1, delay:1.3}}
+          viewport={{once:true}}
+          >
+            <div className='landing-quick-view-container'>
+             <img src={HTML} alt="" /> 
+            <div className='landing-quick-view-container-span'>
+            Web Developing
+            <img src={arrow} alt="" />
+            </div>
+            </div>
+            <div className='landing-quick-view-container'>
+              <img src={Ai} alt="" />
+            <div className='landing-quick-view-container-span'>
+            Data Annotation
+            <img src={arrow} alt="" />
+            </div>
+            </div>
+          </motion.div>
+          </div>
+        </section>
+        </>
+  )
+}
+
+export default LandingPage

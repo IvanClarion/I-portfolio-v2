@@ -1,0 +1,235 @@
+@import 'tailwindcss';
+
+@theme{
+  --color-prime-gray:#C8C8C8;
+  --color-prime-grayV2:#C8C8C81A;
+  --color-prime-navyBlue:#020617;
+  --color-prime-navyBlueV2:#0206171A;
+  --color-prime-blue:#0B217D;
+  --color-prime-orange:#FF6600;
+  --color-prime-purple:#800080;
+  --color-prime-pink:#D1565E;
+  --width-85percent:85%;
+}
+@layer components{
+  body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    @apply
+    bg-gradient-to-b from-prime-navyBlue to-prime-blue
+    m-0
+    
+    ;
+  }
+}
+@layer components{
+  nav{
+    @apply
+    flex
+    w-full
+    sticky
+    flex-row
+    bg-prime-grayV2
+    backdrop-blur-sm
+    lg:top-0
+    bottom-0
+    lg:justify-between
+    justify-center
+    items-center
+    font-semibold
+    text-white
+    lg:rounded-2xl
+    rounded-t-2xl
+    lg:my-2
+    m-0
+    border
+    border-prime-gray
+    z-10
+    ;
+  }
+}
+@layer components{
+  nav ul{
+    @apply
+    flex
+    justify-center
+    items-center
+    mx-5
+    gap-5
+    text-lg
+    ;
+  }
+}
+@layer components{
+  nav ul li:not(:nth-child(4)){
+    @apply
+    p-4
+    cursor-pointer
+    ;
+  }
+}
+@layer components{
+  nav ul li{
+    @apply
+    flex
+    items-center
+    gap-2
+    ;
+  }
+}
+@layer components{
+  nav ul li label, nav label{
+    @apply
+    lg:block
+    hidden
+    ;
+  }
+}
+@layer components{
+  nav ul li img{
+    @apply
+    size-5
+    ;
+  }
+}
+@layer components{
+  nav ul li:not(:nth-child(4)):hover{
+    @apply
+    bg-prime-grayV2
+    duration-300
+    ;
+  }
+}
+@layer components{
+  .contact{
+    @apply
+    lg:bg-prime-orange
+    px-5
+    py-2
+    cursor-pointer
+    rounded-2xl
+    ;
+  }
+}
+@layer components{
+  .active-hover{
+    @apply
+    bg-prime-grayV2
+    duration-300
+    ;
+  }
+}
+@layer components{
+  .landing-page-section{
+  @apply
+  overflow-hidden
+  ;
+  }
+}
+@layer components{
+  .landing-page-container{
+    @apply
+    bg-prime-grayV2
+    lg:text-start
+    text-white
+    lg:grid
+    lg:grid-cols-3
+    lg:items-start
+    flex
+    flex-col
+    items-center
+    justify-between
+    rounded-2xl
+    text-center
+    ;
+  }
+}
+@layer components{
+  .landing-page-container article{
+    @apply
+    flex
+    flex-col
+    lg:items-start
+    items-center
+    justify-start
+    p-2
+    break-words
+    m-5
+    gap-2
+    ;
+  }
+}
+@layer components{
+  .landing-page-container article label{
+    @apply
+    lg:text-7xl
+    text-5xl
+    font-semibold
+    ;
+  }
+}
+@layer components{
+  button{
+  @apply
+  bg-prime-orange
+  border-2
+  border-prime-orange
+  hover:bg-transparent
+  duration-300
+  px-5
+  py-1
+  text-center
+  rounded-xl
+  cursor-pointer
+  font-medium
+  ;
+  }
+}
+@layer components{
+  .landing-quick-view{
+    @apply
+    grid-cols-2
+    grid
+    p-2
+    lg:gap-5
+    gap-2
+    overflow-y-auto
+    lg:m-5
+    ;
+  }
+}
+@layer components{
+  .landing-quick-view-container{
+    @apply
+    bg-gradient-to-b from-prime-purple to-prime-pink
+    p-2
+    flex
+    flex-col
+    font-semibold
+    justify-between
+    items-start
+    rounded-2xl
+    lg:h-52
+    lg:w-full
+    
+    text-2xl
+    ;
+  }
+}
+@layer components{
+  .landing-quick-view-container img{
+    @apply
+    size-10
+    ;
+  }
+}
+@layer components{
+  .landing-quick-view-container-span{
+    @apply
+    flex 
+    flex-col 
+    justify-center 
+    items-end
+    ;
+  }
+}
