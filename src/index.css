@@ -8,8 +8,11 @@
   --color-prime-blue:#0B217D;
   --color-prime-orange:#FF6600;
   --color-prime-purple:#800080;
+  --color-prime-purpleV2:#80008080;
   --color-prime-pink:#D1565E;
+  --color-prime-pinkV2:#D1565E80;
   --width-85percent:85%;
+  --height-85percent:70%;
 }
 @layer components{
   body{
@@ -38,11 +41,12 @@
     items-center
     font-semibold
     text-white
-    lg:rounded-2xl
+    lg:rounded-b-3xl
+    lg:rounded-t-none
     rounded-t-2xl
-    lg:my-2
     m-0
     border
+    lg:border-none
     border-prime-gray
     z-10
     ;
@@ -160,6 +164,26 @@
   }
 }
 @layer components{
+  .landing-page-container article span img{
+    @apply
+    size-9
+    cursor-pointer
+    p-1
+    border-b-0
+    ;
+  }
+}
+@layer components{
+  .landing-page-container article span img:hover{
+    @apply
+    bg-prime-grayV2
+    duration-300
+    
+    rounded-md
+    ;
+  }
+}
+@layer components{
   .landing-page-container article label{
     @apply
     lg:text-7xl
@@ -182,6 +206,8 @@
   rounded-xl
   cursor-pointer
   font-medium
+  lg:text-base
+  text-sm
   ;
   }
 }
@@ -233,3 +259,142 @@
     ;
   }
 }
+@layer components{
+  .aboutme-section{
+    @apply
+    lg:grid
+    lg:grid-cols-2
+    
+    flex
+    flex-col
+    items-center
+    justify-center
+    overflow-hidden
+    gap-y-5
+    ;
+  }
+}
+@layer components{
+  .aboutme-profile{
+    @apply
+    overflow-hidden
+    flex
+    flex-col
+    justify-center
+    relative
+    lg:w-xs
+    w-1/2
+    ;
+  }
+}
+@layer components{
+  .aboutme-profile span{
+    @apply
+    bg-gradient-to-b from-prime-purple to-prime-pink
+    p-2
+    h-85percent
+    
+    bottom-0
+    absolute
+    overflow-hidden
+    w-full
+    rounded-t-2xl
+    -z-10
+    ;
+  }
+}
+@layer components{
+  .about-info-layout{
+    @apply
+    grid
+    grid-cols-2
+    justify-center
+    items-stretch
+    lg:gap-3
+    gap-1
+    my-2
+    ;
+  }
+}
+@layer components{
+  .about-info-container{
+    @apply
+    bg-gradient-to-b from-prime-purpleV2 to-prime-pinkV2
+    p-2
+    text-white
+    rounded-2xl
+    border-prime-pink
+    border-2
+    flex
+    flex-col
+    justify-start
+    items-center
+    gap-2
+    ;
+  }
+}
+@layer components{
+  .about-info-container article{
+    @apply
+    text-center
+    tracking-wide
+    leading-loose
+  }
+}
+@layer components{
+  .about-info-container article label{
+    @apply
+    lg:text-3xl
+    text-xl
+    font-semibold
+  }
+}
+@layer components{
+  .about-info-container article p{
+    @apply
+    lg:text-base
+    text-xs
+  }
+}
+@layer components{
+  .skill-section{
+    @apply
+    block
+    w-full
+    bg-prime-grayV2
+    rounded-2xl
+    p-5
+    text-white
+    my-5
+    ;
+  }
+}
+@layer components{
+  .skill-section-heading{
+    @apply
+    flex
+    justify-center
+    items-center
+    ;
+  }
+}
+@layer components{
+  .skill-section-heading label{
+    @apply
+    text-xl
+    uppercase
+    font-semibold
+    ;
+  }
+}
+@layer components{
+  .skill-container-layout{
+    @apply
+    flex
+    items-stretch
+    justify-center
+    gap-2
+    ;
+  }
+}
+
