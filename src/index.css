@@ -7,12 +7,15 @@
   --color-prime-navyBlueV2:#0206171A;
   --color-prime-blue:#0B217D;
   --color-prime-orange:#FF6600;
+  --color-prime-orangeV2:#FF660080;
   --color-prime-purple:#800080;
   --color-prime-purpleV2:#80008080;
   --color-prime-pink:#D1565E;
   --color-prime-pinkV2:#D1565E80;
   --width-85percent:85%;
+  --width-95percent:95%;
   --height-85percent:70%;
+  --height-95percent:95%;
 }
 @layer components{
   body{
@@ -358,14 +361,14 @@
 }
 @layer components{
   .skill-section{
-    @apply
+    @apply 
     block
-    w-full
     bg-prime-grayV2
     rounded-2xl
     p-5
     text-white
     my-5
+    overflow-visible
     ;
   }
 }
@@ -373,14 +376,17 @@
   .skill-section-heading{
     @apply
     flex
+    flex-col
     justify-center
     items-center
+    gap-2
     ;
   }
 }
 @layer components{
   .skill-section-heading label{
     @apply
+    lg:text-3xl
     text-xl
     uppercase
     font-semibold
@@ -388,13 +394,97 @@
   }
 }
 @layer components{
-  .skill-container-layout{
+  .skill-container-layout {
     @apply
     flex
+    flex-row
     items-stretch
-    justify-center
+    lg:justify-center
+    justify-start
     gap-2
+    p-2
+    lg:w-full
+    w-80
+    overflow-auto
+    snap-mandatory
+    snap-x
+    
+    ;
+}
+}
+@layer components{
+  .skill-container{
+    @apply
+    flex
+    flex-col
+    flex-shrink-0
+    justify-start
+    items-center
+    p-2
+    relative
+    overflow-hidden
+    w-40
+    text-center
+    break-words
+    snap-start
+    ;
+  }
+}
+@layer components{
+  .skill-container span{
+    @apply
+    bg-prime-pinkV2
+    w-full
+    h-85percent
+    border-2
+    border-prime-pink
+    p-2
+    bottom-0
+    absolute
+    rounded-lg
+    -z-10
+    ;
+  }
+}
+@layer components{
+  .skill-container label{
+    @apply
+    lg:text-xl
+    text-lg
+    font-semibold
+    ;
+  }
+}
+@layer components{
+  .button-container{
+    @apply
+    bg-transparent
+    rounded-lg
+    border-prime-orange
+    border-2
+    inline-flex
+    items-center
+    justify-center
+    
+    ;
+  }
+}
+@layer components{
+  .button-container button{
+    @apply
+    p-4
+    rounded-none
+    border-0
+    font-semibold
+    bg-prime-orangeV2
     ;
   }
 }
 
+@layer components{
+  .active-button2{
+    @apply
+    bg-prime-orange
+    ;
+  }
+}
