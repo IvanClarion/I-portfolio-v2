@@ -2,6 +2,7 @@ import React from 'react'
 import LandingPage from './LandingPage'
 import AboutMe from './AboutMe'
 import Skills from './Skills'
+import Achievement from '../components/Achievement'
 function PublicApp() {
 
   return (
@@ -10,6 +11,7 @@ function PublicApp() {
       <LandingPage/>
       <AboutMe/>
       <Skills/>
+      <Achievement/>
     </section>
     </>
   )

@@ -8,6 +8,12 @@ import ReactLogo from '../assets/home/react.svg'
 import BS from '../assets/home/bs.svg'
 import Vite from '../assets/home/vite.svg'
 import { motion } from 'framer-motion'
+import GenAi from '../assets/home/chatbot.svg'
+import ImageAnnotation from '../assets/home/image_annotation.svg'
+import LLM from '../assets/home/LLM.svg'
+import PromptEval from '../assets/home/prompt_eval.svg'
+import Transcription from '../assets/home/transcription.svg'
+import VideoAnnotation from '../assets/home/video_annotation.svg'
 function Skills() {
   return (
 <>
@@ -19,7 +25,7 @@ function Skills() {
         >
           <div className='skill-container'>
             <span></span>
-            <img src={HTML} alt="" />
+            <img src={Transcription} alt="" />
             
               <label>Transcription</label>
               <article className='flex flex-col items-center gap-1'>
@@ -29,7 +35,7 @@ function Skills() {
           </div>
           <div className='skill-container'>
             <span></span>
-            <img src={JS} alt="" />
+            <img src={ImageAnnotation} alt="" />
             
               <label>Image Annotation</label>
               <article className='flex flex-col items-center gap-1'>
@@ -40,7 +46,7 @@ function Skills() {
 
           <div className='skill-container'>
             <span></span>
-            <img src={CSS} alt="" />
+            <img src={VideoAnnotation} alt="" />
             
               <label>Video Annotation</label>
               <article className='flex flex-col items-center gap-1'>
@@ -51,7 +57,7 @@ function Skills() {
 
           <div className='skill-container'>
             <span></span>
-            <img src={Tailwind} alt="" />
+            <img src={PromptEval} alt="" />
             
               <label>Prompt Evaluator</label>
               <article className='flex flex-col items-center gap-1'>
@@ -62,7 +68,7 @@ function Skills() {
 
           <div className='skill-container'>
             <span></span>
-            <img src={ReactLogo} alt=""  />
+            <img src={LLM} alt=""  />
             
               <label>LLM</label>
               <article className='flex flex-col items-center gap-1'>
@@ -73,7 +79,7 @@ function Skills() {
 
           <div className='skill-container'>
             <span></span>
-            <img src={BS} alt=""  />
+            <img src={GenAi} alt=""  />
             
               <label>Generative AI</label>
               <article className='flex flex-col items-center gap-1'>

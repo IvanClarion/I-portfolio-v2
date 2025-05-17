@@ -32,8 +32,8 @@ function Skills() {
         <div className='skill-section-heading'>
         <label>Skills</label>
         <div className='button-container'>
-            <button onClick={(e)=>webButton(e)} >Web Developing</button>
-            <button onClick={(e)=>dataButton(e)} >Data Annotation</button>
+            <button onClick={webButton} className={web? 'bg-prime-orange':''}>Web Developing</button>
+            <button onClick={dataButton} className={data? 'bg-prime-orange': ''} >Data Annotation</button>
         </div>
         </div>
     {web && (

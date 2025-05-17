@@ -51,7 +51,7 @@
     border
     lg:border-none
     border-prime-gray
-    z-10
+    z-20
     ;
   }
 }
@@ -485,6 +485,104 @@
   .active-button2{
     @apply
     bg-prime-orange
+    ;
+  }
+}
+@layer components{
+  .achievment-section{
+    @apply
+    block
+    text-white
+    overflow-hidden
+    relative
+    p-0
+    h-96
+    ;
+  }
+}
+@layer components{
+  .achievment-section article{
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+    ;
+  }
+}
+@layer components{
+  .achievment-layout{
+    @apply
+    flex
+    flex-col
+    items-stretch
+  }
+}
+@layer components{
+  .achievment-container{
+    @apply
+    flex
+    lg:flex-row
+    flex-col
+    items-center
+    bg-prime-grayV2
+    rounded-2xl
+    ;
+  }
+}
+@layer components{
+  .achievment-container article{
+    @apply
+    text-center
+    p-1
+    ;
+  }
+}
+@layer components{
+  .achievment-container article label{
+    @apply
+    text-xl
+    font-semibold
+    ;
+  }
+}
+@layer components{
+  .achievment-container span{
+    @apply
+    relative
+    
+    lg:size-3/4
+    ;
+  }
+}
+@layer components{
+  .achievment-container span img{
+    @apply
+    rounded-lg
+    ;
+  }
+}
+@layer components{
+  .achivement-span{
+    @apply
+    bg-gradient-to-t from-prime-navyBlue to-prime-navyBlueV2
+    h-24
+    absolute
+    z-10
+    bottom-0
+    w-full
+    items-end
+    justify-center
+    flex
+    ;
+  }
+}
+@layer components{
+  .achivement-span button{
+    @apply
+    bg-transparent
+    border-none
+    flex
     ;
   }
 }
