@@ -14,9 +14,9 @@ function LandingPage() {
           <div className='landing-page-container'>
           <motion.article
           initial={{opacity:0, x:-20}}
-          animate={{opacity:1, x:0}}
+          whileInView={{opacity:1, x:0}}
           transition={{duration:1, delay:0.2}}
-          viewport={{once:true}}
+          
           >
             <label >Ivan Dale Clarion</label>
             <p>Hello! I am Ivan and welcome to my portfolio.</p>
@@ -29,15 +29,15 @@ function LandingPage() {
           </motion.article>
           <motion.img src={Profile1} alt="" className='lg:size-fit size-1/2'
           initial={{opacity:0, y:20}}
-          animate={{opacity:1, y:0}}
+          whileInView={{opacity:1, y:0}}
           transition={{duration:1, delay:0.7}}
-          viewport={{once:true}}
+          
           />
           <motion.div className='landing-quick-view'
           initial={{opacity:0, x:20}}
-          animate={{opacity:1, x:0}}
+          whileInView={{opacity:1, x:0}}
           transition={{duration:1, delay:1.3}}
-          viewport={{once:true}}
+          
           >
             <div className='landing-quick-view-container'>
              <img src={HTML} alt="" /> 

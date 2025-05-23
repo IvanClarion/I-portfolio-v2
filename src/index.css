@@ -16,6 +16,7 @@
   --width-95percent:95%;
   --height-85percent:70%;
   --height-95percent:95%;
+  --aspect-ratio-3-2:3/2;
 }
 @layer components{
   body{
@@ -23,9 +24,16 @@
     font-optical-sizing: auto;
     @apply
     bg-gradient-to-b from-prime-navyBlue to-prime-blue
-    m-0
     
     ;
+  }
+}
+@layer components{
+  body::-webkit-scrollbar{
+    @apply
+    hidden
+    ;
+    
   }
 }
 @layer components{
@@ -201,7 +209,7 @@
   bg-prime-orange
   border-2
   border-prime-orange
-  hover:bg-transparent
+  hover:bg-prime-orangeV2
   duration-300
   px-5
   py-1
@@ -373,6 +381,13 @@
   }
 }
 @layer components{
+  .skill-container-layout::-webkit-scrollbar{
+    @apply 
+    lg:invisible
+    visible
+  }
+}
+@layer components{
   .skill-section-heading{
     @apply
     flex
@@ -489,100 +504,64 @@
   }
 }
 @layer components{
-  .achievment-section{
+  .offer-section{
     @apply
-    block
     text-white
     overflow-hidden
-    relative
-    p-0
-    h-96
     ;
   }
 }
 @layer components{
-  .achievment-section article{
+  .offer-title{
     @apply
-    flex
-    flex-col
-    justify-center
-    items-center
-    ;
-  }
-}
-@layer components{
-  .achievment-layout{
-    @apply
-    flex
-    flex-col
-    items-stretch
-  }
-}
-@layer components{
-  .achievment-container{
-    @apply
-    flex
-    lg:flex-row
-    flex-col
-    items-center
-    bg-prime-grayV2
-    rounded-2xl
-    ;
-  }
-}
-@layer components{
-  .achievment-container article{
-    @apply
-    text-center
-    p-1
-    ;
-  }
-}
-@layer components{
-  .achievment-container article label{
-    @apply
-    text-xl
+    lg:text-2xl
     font-semibold
+    bg-prime-pink
+    rounded-xl
+    p-2
     ;
   }
 }
 @layer components{
-  .achievment-container span{
+  .offer-container{
     @apply
-    relative
-    
-    lg:size-3/4
-    ;
-  }
-}
-@layer components{
-  .achievment-container span img{
-    @apply
-    rounded-lg
-    ;
-  }
-}
-@layer components{
-  .achivement-span{
-    @apply
-    bg-gradient-to-t from-prime-navyBlue to-prime-navyBlueV2
-    h-24
-    absolute
-    z-10
-    bottom-0
+    flex
+    flex-col
     w-full
-    items-end
+    lg:gap-5
+    p-5
+    gap-2
     justify-center
+    items-center
+    relative
+    bg-gradient-to-b from-prime-purpleV2 to-prime-pinkV2
+    border-2
+    border-prime-pink
+    rounded-xl
+    overflow-hidden
+    ;
+  }
+}
+
+@layer components{
+  .offer-container form{
+    @apply
     flex
+    items-center
+    justify-center
+    w-full
+    gap-2
     ;
   }
 }
 @layer components{
-  .achivement-span button{
+  .offer-container form input{
     @apply
-    bg-transparent
-    border-none
-    flex
+    border
+    lg:w-1/2
+    p-1
+    rounded-md
+    outline-0
     ;
   }
 }

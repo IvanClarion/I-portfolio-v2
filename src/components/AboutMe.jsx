@@ -10,13 +10,13 @@ function AboutMe() {
         initial={{height:0, opacity:0}}
         whileInView={{height:'70%', opacity:1}}
         transition={{duration:0.8, delay:0.1}}
-        viewport={{once:true}}
+        
         ></motion.span>
         <motion.img src={Profile} alt="" className='' 
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:0.8, delay:0.8}}
-        viewport={{once:true}}
+        
         />
       </div>
       <div className='flex flex-col'>
@@ -24,7 +24,7 @@ function AboutMe() {
       initial={{x:10, opacity:0}}
       whileInView={{x:0, opacity:1}}
       transition={{duration:0.8, delay:0.1}}
-      viewport={{once:true}}
+      
       >
             <article>
             <label>About Me</label>
@@ -37,7 +37,7 @@ function AboutMe() {
       initial={{y:10, opacity:0}}
       whileInView={{y:0, opacity:1}}
       transition={{duration:0.8, delay:0.8}}
-      viewport={{once:true}}
+      
       >
           <div  className='about-info-container'>
           <article>

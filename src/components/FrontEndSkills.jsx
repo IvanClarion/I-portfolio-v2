@@ -27,7 +27,6 @@ function Skills() {
     initial={{ opacity: 0, y: 10 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay: 0.3 }}
-    viewport={{ once: true }}
     >
         <div className='skill-section-heading'>
         <label>Skills</label>
@@ -41,7 +40,7 @@ function Skills() {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        viewport={{ once: true }}
+        
         >
           <div className='skill-container'>
             <span></span>
