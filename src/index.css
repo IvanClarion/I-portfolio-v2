@@ -45,8 +45,8 @@
     flex-row
     bg-prime-grayV2
     backdrop-blur-sm
-    lg:top-0
-    bottom-0
+    top-0
+    
     lg:justify-between
     justify-center
     items-center
@@ -54,7 +54,7 @@
     text-white
     lg:rounded-b-3xl
     lg:rounded-t-none
-    rounded-t-2xl
+    rounded-b-2xl
     m-0
     border
     lg:border-none
@@ -562,6 +562,39 @@
     p-1
     rounded-md
     outline-0
+    ;
+  }
+}
+@layer components{
+  .footer-section{
+    @apply
+    block
+    relative
+    bottom-0
+    w-full
+    bg-prime-grayV2
+    text-white
+    rounded-t-3xl
+    p-5
+    ;
+  }
+}
+@layer components{
+  .footer-container{
+    @apply
+    grid
+    lg:grid-cols-3
+    items-start
+    justify-center
+    gap-3
+    ;
+  }
+}
+@layer components{
+  .footer-container img{
+    @apply
+    size-8
+    cursor-pointer
     ;
   }
 }
