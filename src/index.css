@@ -507,6 +507,11 @@
   .offer-section{
     @apply
     text-white
+    w-full
+    bg-gradient-to-b from-prime-purpleV2 to-prime-pinkV2
+    border-2
+    border-prime-pink
+    rounded-xl
     overflow-hidden
     ;
   }
@@ -526,19 +531,14 @@
   .offer-container{
     @apply
     flex
+    lg:flex-row
     flex-col
-    w-full
-    lg:gap-5
+    lg:gap-20
+    gap-5
     p-5
-    gap-2
-    justify-center
+    justify-start
     items-center
-    relative
-    bg-gradient-to-b from-prime-purpleV2 to-prime-pinkV2
-    border-2
-    border-prime-pink
-    rounded-xl
-    overflow-hidden
+    
     ;
   }
 }
@@ -547,10 +547,12 @@
   .offer-container form{
     @apply
     flex
-    items-center
-    justify-center
-    w-full
+    flex-col
+    text-start
+    items-stretch
+    justify-start
     gap-2
+    size-full
     ;
   }
 }
@@ -558,10 +560,10 @@
   .offer-container form input{
     @apply
     border
-    lg:w-1/2
     p-1
     rounded-md
     outline-0
+    w-full
     ;
   }
 }
