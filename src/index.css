@@ -743,4 +743,109 @@
     ;
   }
 }
+@layer components{
+  .widgets-section{
+    @apply
+    grid
+    lg:grid-cols-4
+    grid-cols-2
+    items-stretch
+    text-prime-black
+    p-5
+    lg:gap-5
+    gap-2
+    ;
+  }
+}
+@layer components{
+  .widgets-container{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-white
+    bg-gradient-to-l from-prime-pinkV2 to-prime-purpleV2
+    rounded-2xl
+    p-2
+    border-2
+    border-prime-pink
+    overflow-hidden
+    
+    ;
+  }
+}
+@layer components{
+  .widgets-container span label{
+    @apply
+    lg:text-base
+    text-xs
+    
+    ;
+  }
+}
+@layer components{
+  .widgets-container article header{
+    @apply
+    flex
+    items-center
+    justify-center
+    text-white
+    font-semibold
+    lg:text-xl
+    text-sm
+    rounded-2xl
+    lg:p-5
+    p-2
+    ;
+  }
+}
+@layer components{
+  .widgets-container article{
+    @apply
+    flex
+    items-center
+    justify-center
+    gap-0
+    ;
+  }
+}
+@layer components{
+  .widgets-circular-bar{
+    @apply
+    p-2
+    lg:size-24
+    size-20
+    rounded-full
+    bg-transparent
+    border-8
+    border-prime-orange
+    flex
+    justify-center
+    items-center
+    text-xl
+    shadow-lg
+    shadow-prime-orangeV2
+    ;
+  }
+}
+@layer components{
+  .widgets-circular-bar-v2{
+    @apply
+    p-2
+    lg:size-24
+    size-20
+    rounded-full
+    bg-transparent
+    border-8
+    border-green-500
+    flex
+    justify-center
+    items-center
+    text-base
+    shadow-lg
+    shadow-green-500
+    ;
+  }
+}
 
