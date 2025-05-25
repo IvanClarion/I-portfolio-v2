@@ -24,10 +24,12 @@ function Navbar() {
                 <label>Home</label>
             </li>
             </NavLink>
-            <li>
+            <NavLink to='/publicprojectPage'>
+            <li className={location.pathname==='/publicprojectPage'? 'active-hover':''}>
                 <img src={Porojects} alt="" />
                 <label>Projects</label>
             </li>
+            </NavLink>
             <li>
                 <img src={Certificates} alt="" />
                 <label>Certificates</label>

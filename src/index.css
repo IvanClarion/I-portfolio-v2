@@ -12,6 +12,8 @@
   --color-prime-purpleV2:#80008080;
   --color-prime-pink:#D1565E;
   --color-prime-pinkV2:#D1565E80;
+  --color-prime-black:#231F20;
+  --color-prime-blackV2:#231F2080;
   --width-85percent:85%;
   --width-95percent:95%;
   --height-85percent:70%;
@@ -508,7 +510,7 @@
     @apply
     text-white
     w-full
-    bg-gradient-to-b from-prime-purpleV2 to-prime-pinkV2
+    bg-gradient-to-l from-prime-purpleV2 to-prime-pinkV2
     border-2
     border-prime-pink
     rounded-xl
@@ -600,3 +602,149 @@
     ;
   }
 }
+@layer components{
+  .project-section{
+    @apply
+    block
+    bg-prime-grayV2
+    text-white
+    rounded-2xl
+    p-5
+    overflow-hidden
+    ;
+  }
+}
+@layer components{
+  .project-header-container{
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    border-b-4
+    p-2
+    border-prime-pink
+    ;
+  }
+}
+@layer components{
+  .project-contents{
+    @apply
+    grid
+    lg:grid-cols-4
+    grid-cols-2
+    lg:gap-5
+    gap-2
+    w-full
+    items-stretch
+    
+    ;
+  }
+}
+@layer components{
+  .project-contents div{
+    
+    @apply
+    bg-prime-blackV2
+    border-2
+    border-prime-black
+    rounded-lg
+    p-2
+    overflow-hidden
+    break-words
+    flex
+    flex-col
+    gap-5
+    relative
+    justify-between
+    ;
+  }
+}
+@layer components{
+  .project-contents div header{
+    
+    @apply
+    text-xl
+    font-semibold
+  }
+}
+@layer components{
+  .project-contents div summary{
+    
+    @apply
+    lg:text-sm
+    text-xs
+    
+  }
+}
+@layer components{
+  .project-contents div img{
+    
+    @apply
+    rounded-lg
+    aspect-ratio-3-2
+    ;
+  }
+}
+@layer components{
+  .project-other-info{
+    @apply
+    flex
+    flex-col
+    gap-2
+    bg-transparent
+    text-xs
+    ;
+  }
+}
+@layer components{
+  .project-other-info span label{
+    @apply
+    text-prime-gray
+    ;
+  }
+}
+@layer components{
+  .span-button{
+    @apply
+    flex
+    gap-2
+    items-stretch
+    justify-end
+    ;
+  }
+}
+@layer components{
+  .span-button button{
+    @apply
+    w-full
+    p-0
+    bottom-0
+    
+    ;
+  }
+}
+
+@layer components{
+  .span-button a img{
+    @apply
+    size-7
+    ;
+  }
+}
+@layer components{
+  .span-button a{
+    @apply
+    bg-prime-orangeV2
+    flex
+    justify-center
+    items-center
+    py-1
+    px-2
+    border
+    border-prime-orange
+    rounded-lg
+    ;
+  }
+}
+
