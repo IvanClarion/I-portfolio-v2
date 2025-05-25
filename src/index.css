@@ -628,7 +628,7 @@
     @apply
     grid
     lg:grid-cols-4
-    grid-cols-2
+    grid-cols-1
     lg:gap-5
     gap-2
     w-full
