@@ -16,7 +16,7 @@ function Navbar() {
       transition={{ duration: 0.5, delay: 0.2 }}
       viewport={{ once: true }}
       >
-        <label className='uppercase text-xl p-2 mx-2'>Clarion</label>
+        <label className='uppercase text-xl p-2 mx-2 lg:block hidden'>Clarion</label>
            <ul>
             <NavLink to='/'>
             <li className={location.pathname==='/'? 'active-hover':''}>

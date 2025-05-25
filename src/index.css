@@ -72,8 +72,10 @@
     justify-center
     items-center
     mx-5
-    gap-5
-    text-lg
+    lg:gap-5
+    gap-2
+    lg:text-lg
+    text-sm
     ;
   }
 }
@@ -89,16 +91,10 @@
   nav ul li{
     @apply
     flex
+    lg:flex-row
+    flex-col
     items-center
     gap-2
-    ;
-  }
-}
-@layer components{
-  nav ul li label, nav label{
-    @apply
-    lg:block
-    hidden
     ;
   }
 }
