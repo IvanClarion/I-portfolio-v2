@@ -1,5 +1,5 @@
 import React from 'react'
-import { Folder } from 'lucide-react';
+import { Folder, BriefcaseBusiness } from 'lucide-react';
 function ProjectWidgets() {
   return (
     <>
@@ -15,7 +15,7 @@ function ProjectWidgets() {
             </div>
             <div className='widgets-container'>
                 <article>
-                    <Folder className='text-white lg:size-8 size-6'/>
+                    <BriefcaseBusiness className='text-white lg:size-8 size-6'/>
                     <header> Work Availability</header>
                 </article>
                 <span className='widgets-circular-bar-v2'>

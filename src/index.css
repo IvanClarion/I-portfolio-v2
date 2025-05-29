@@ -117,8 +117,8 @@
   .contact{
     @apply
     lg:bg-prime-orange
-    px-5
-    py-2
+    lg:px-5
+    lg:py-2
     cursor-pointer
     rounded-2xl
     ;
@@ -582,11 +582,15 @@
 @layer components{
   .footer-container{
     @apply
-    grid
+    lg:grid
     lg:grid-cols-3
-    items-start
+    lg:items-start
+    items-center
     justify-center
-    gap-3
+    lg:gap-3
+    flex
+    flex-col
+    gap-y-6
     ;
   }
 }
@@ -670,6 +674,7 @@
     @apply
     lg:text-sm
     text-xs
+    list-none
     
   }
 }
@@ -765,7 +770,7 @@
     items-center
     justify-center
     text-white
-    bg-gradient-to-l from-prime-pinkV2 to-prime-purpleV2
+    bg-gradient-to-t from-prime-pinkV2 to-prime-purpleV2
     rounded-2xl
     p-2
     border-2

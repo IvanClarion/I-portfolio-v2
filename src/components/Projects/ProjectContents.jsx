@@ -127,7 +127,7 @@ function ProjectContents() {
                     </span>
                     <span className='flex items-center gap-1'>
                       <label>Tech Stack:</label>
-                      <p>React JS, Tailwind, Firebase</p>
+                      <p>React JS, Tailwind, Firebase, Zapier</p>
                     </span>
                   </article>
                   <span className='span-button'>
