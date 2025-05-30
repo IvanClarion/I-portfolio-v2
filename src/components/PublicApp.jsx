@@ -3,6 +3,9 @@ import LandingPage from './LandingPage'
 import AboutMe from './AboutMe'
 import Skills from './Skills'
 import Offer from './Offer'
+import Services from './Services'
+
+import Experience from './Experience'
 function PublicApp() {
 
   return (
@@ -12,6 +15,8 @@ function PublicApp() {
       <LandingPage/>
       <AboutMe/>
       <Skills/>
+      <Services/>
+      <Experience/>
       <Offer/>
       </div>
     </section>
