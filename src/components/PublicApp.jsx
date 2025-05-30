@@ -17,7 +17,7 @@ function PublicApp() {
       <Skills/>
       <Services/>
       <Experience/>
-      <Offer/>
+      
       </div>
     </section>
     </>

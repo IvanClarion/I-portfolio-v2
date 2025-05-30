@@ -20,7 +20,7 @@ function Services() {
                     <span className='card-container'></span>
                     <CodeXml className='lg:size-10 size-8'/>
                     <article>
-                        <label className='font-semibold lg:text-xl text-sm'>Web Development</label>
+                        <label className='font-semibold lg:text-xl text-base'>Web Development</label>
                         <p className='lg:text-base text-xs '>I can develop  website for your business or portfolio</p>
                     </article>
                 </div>
@@ -29,7 +29,7 @@ function Services() {
                     <span className='card-container'></span>
                     <BrainCircuit className='lg:size-10 size-8'/>
                     <article>
-                        <label className='font-semibold lg:text-xl text-sm'>Prompt Evaluator</label>
+                        <label className='font-semibold lg:text-xl text-base'>Prompt Evaluator</label>
                         <p className='lg:text-base text-xs '>I can train your Generative AI model and evaluate the prompt's quality </p>
                     </article>
                 </div>
@@ -38,7 +38,7 @@ function Services() {
                     <span className='card-container'></span>
                     <BadgeCheck className='lg:size-10 size-8'/>
                     <article>
-                        <label className='font-semibold lg:text-xl text-sm'>Quality Assurance</label>
+                        <label className='font-semibold lg:text-xl text-base'>Quality Assurance</label>
                         <p className='lg:text-base text-xs'>I can help improve your UI/UX on you current software. I can also improve your AI model</p>
                     </article>
                 </div>
@@ -47,7 +47,7 @@ function Services() {
                     <span className='card-container'></span>
                     <HeartHandshake className='lg:size-10 size-8'/>
                     <article>
-                        <label className='font-semibold lg:text-xl text-sm'>Volunteer</label>
+                        <label className='font-semibold lg:text-xl text-base'>Volunteer</label>
                         <p className='lg:text-base text-xs'>Have Innovative Ideas and want to collaborate? What are you waiting for?</p>
                     </article>
                 </div>
