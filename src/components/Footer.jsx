@@ -20,10 +20,10 @@ function Footer() {
                 <Link to='/'>
                 <li>Home</li>
                 </Link>
-                <Link tp='projectPage'>
+                <Link to='/publicprojectPage'>
                 <li>Projects</li>
                 </Link>
-                <Link to='/certificatesPage'>
+                <Link to='/publiccertificates'>
                 <li>Certificates</li>
                 </Link>
             </ul>  
