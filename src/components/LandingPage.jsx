@@ -7,6 +7,7 @@ import Fb from '../assets/home/fb.svg'
 import Github from '../assets/home/github.svg'
 import LinkedIn from '../assets/home/linkedin.svg'
 import {motion} from 'framer-motion'
+import { Link } from 'react-router'
 function LandingPage() {
   return (
   <>
@@ -20,11 +21,17 @@ function LandingPage() {
           >
             <label >Ivan Dale Clarion</label>
             <p>Hello! I am Ivan and welcome to my portfolio.</p>
-            <button>Know More</button>
+            <button>Explore Projects</button>
             <span className='flex gap-2 items-center justify-center my-2'>
+              <Link target='_blank' to='https://web.facebook.com/ivan.clarion.2024'>
               <img src={Fb} alt="" />
+              </Link>
+              <Link target='_blank' to='https://github.com/IvanClarion'>
               <img src={Github} alt="" /> 
+              </Link>
+              <Link target='_blank' to='https://www.linkedin.com/in/ivandaleclarion'>
               <img src={LinkedIn} alt="" />
+              </Link>
             </span>
           </motion.article>
           <motion.img src={Profile1} alt="" className='lg:size-fit size-1/2'

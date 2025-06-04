@@ -14,6 +14,7 @@
   --color-prime-pinkV2:#D1565E80;
   --color-prime-black:#231F20;
   --color-prime-blackV2:#231F2080;
+  --color-prime-modal:rgba(0,0,0,0.6);
   --width-85percent:85%;
   --width-95percent:95%;
   --height-85percent:70%;
@@ -511,6 +512,7 @@
     border-prime-pink
     rounded-xl
     overflow-hidden
+    
     ;
   }
 }
@@ -896,7 +898,8 @@
   .card-container{
     @apply
     absolute
-    h-85percent
+    lg:h-85percent
+    h-[80%]
     w-full
     bg-gradient-to-r from-prime-purpleV2 to-prime-pinkV2
     -z-10
@@ -988,5 +991,67 @@
     ;
   }
 }
+@layer components{
+  .announcements-section{
+    @apply
+    bg-prime-grayV2
+    text-white
+    rounded-2xl
+    p-5
+    overflow-hidden
+    shadow-2xl
+    mb-5
+    border-prime-grayV2
+    border-2
+    duration-300
+    
+    lg:text-base
+    text-sm
+    ;
+  }
+}
+@layer components{
+  .cert-section{
+    @apply
+    text-white
+    block
+    bg-prime-grayV2
+    p-5
+    rounded-2xl
+    ;
+  }
+
+}
+@layer components{
+  .cert-container{
+    @apply
+    grid
+    lg:grid-cols-4
+    grid-cols-1
+    lg:gap-5
+    gap-2
+    ;
+  }
+}
+@layer components{
+  .cert-card{
+    @apply
+    bg-prime-blackV2
+    p-2
+    rounded-lg
+    overflow-hidden
+    ;
+  }
+}
+@layer components{
+  .embed::-webkit-scrollbar{
+    
+    @apply
+    overflow-hidden
+    hidden
+    ;
+  }
+}
+
 
 

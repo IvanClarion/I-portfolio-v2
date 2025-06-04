@@ -4,6 +4,7 @@ import PublicApp from './components/PublicApp'
 import LandingPage from './components/LandingPage'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Certificates from './Page/Certifications'
 import ProjectPage from './Page/ProjectsPage'
 import { useLocation } from 'react-router-dom'
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path= '/publicLanding' element={<LandingPage/>}/>
             <Route path= '/navbar' element={<Navbar/>}/>
             <Route path='/publicprojectPage' element={<ProjectPage/>}/>
+            <Route path='/publiccertificates' element={<Certificates/>}/>
           </Routes>
       {PublicPage && <Footer/>}
       </main>

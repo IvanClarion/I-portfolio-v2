@@ -9,7 +9,7 @@ import { motion } from 'motion/react';
 function Experience() {
   return (
     <>
-      <section className='experience-section'>
+      <section className='experience-section my-10'>
             <motion.div className='experience-container'
             initial={{opacity:0, y:20}}
             whileInView={{opacity:1, y:0}}

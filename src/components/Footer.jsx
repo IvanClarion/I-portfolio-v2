@@ -29,9 +29,15 @@ function Footer() {
         <span className='flex flex-col justify-center items-center'>
             <label className='text-xl font-semibold'>Socials</label> 
             <span className='flex gap-2 my-2'>
+                <Link target='_blank' to='https://web.facebook.com/ivan.clarion.2024'>
                 <img src={Fb} alt="" />
+                </Link>
+                <Link target='_blank' to='https://github.com/IvanClarion'>
                 <img src={Github} alt="" /> 
+                </Link>
+                <Link target='_blank' to='https://www.linkedin.com/in/ivandaleclarion'>
                 <img src={LinkedIn} alt="" />
+                </Link>
             </span> 
         </span>
     </div>    

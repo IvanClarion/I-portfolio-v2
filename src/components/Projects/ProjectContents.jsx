@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'motion/react'
 import CIT from '../../assets/Images/Projects/CIT.png'
 import Xaviers from '../../assets/Images/Projects/xaviers.png'
 import YourQr from '../../assets/Images/Projects/YourQR.png'
@@ -9,7 +10,11 @@ import CobraTour from '../../assets/Images/Projects/cobratour.png'
 function ProjectContents() {
   return (
     <>
-        <section className='project-contents'>
+        <motion.section className='project-contents'
+        initial={{ opacity: 0, y:20}}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1}}
+        >
             <div>
                <img src={CIT} alt="" />
                <article>
@@ -139,7 +144,7 @@ function ProjectContents() {
                     <a target='_blank' href='https://github.com/IvanClarion/Cobratour-v2.01'><img src={Git} alt="" /></a>
                   </span>
             </div>
-        </section>
+        </motion.section>
     </>
   )
 }

@@ -1,9 +1,14 @@
 import React from 'react'
 import { Folder, BriefcaseBusiness } from 'lucide-react';
+import { motion } from 'motion/react';
 function ProjectWidgets() {
   return (
     <>
-        <section className='widgets-section'>
+        <motion.section className='widgets-section'
+        initial={{ opacity: 0, y:20}}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeInOut' }}
+        >
             <div className='widgets-container'>
                 <article>
                     <Folder className='text-white lg:size-8 size-6'/>
@@ -22,7 +27,7 @@ function ProjectWidgets() {
                     <label>Contract</label>
                 </span>
             </div>
-        </section> 
+        </motion.section> 
     </>
   )
 }
