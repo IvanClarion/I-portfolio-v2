@@ -10,7 +10,9 @@ function Footer() {
     <div className='footer-container'>
         <span className='flex flex-col gap-2'>
             <label className='lg:text-4xl text-2xl font-semibold'>Innovating today for a better tomorrow!</label> 
-            <button>Send Me a Feedback</button>  
+            <Link to='/publiccontact'>
+            <button>Send Me a Feedback</button> 
+            </Link> 
         </span>
         <span className='flex flex-col items-center text-center'>
             <label className='text-xl font-semibold'>Navigate Here</label> 

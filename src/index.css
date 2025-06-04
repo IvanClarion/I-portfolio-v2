@@ -118,7 +118,7 @@
   .contact{
     @apply
     lg:bg-prime-orange
-    lg:px-5
+    lg:px-2
     lg:py-2
     cursor-pointer
     rounded-2xl
@@ -1027,9 +1027,10 @@
     @apply
     grid
     lg:grid-cols-4
-    grid-cols-1
+    grid-cols-2
     lg:gap-5
     gap-2
+    my-5
     ;
   }
 }
@@ -1040,15 +1041,23 @@
     p-2
     rounded-lg
     overflow-hidden
+    flex
+    flex-col
+    justify-between
     ;
   }
 }
 @layer components{
-  .embed::-webkit-scrollbar{
-    
+  .contact-form-container{
     @apply
-    overflow-hidden
-    hidden
+    flex
+    flex-col
+    bg-prime-blackV2
+    items-center
+    justify-center
+    p-5
+    rounded-2xl
+    gap-3
     ;
   }
 }

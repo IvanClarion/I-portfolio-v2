@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Certificates from './Page/Certifications'
 import ProjectPage from './Page/ProjectsPage'
 import { useLocation } from 'react-router-dom'
+import ContactPage from './Page/Contact'
 function App() {
   
   const location = useLocation();
@@ -23,6 +24,7 @@ function App() {
             <Route path= '/navbar' element={<Navbar/>}/>
             <Route path='/publicprojectPage' element={<ProjectPage/>}/>
             <Route path='/publiccertificates' element={<Certificates/>}/>
+            <Route path='/publiccontact' element={<ContactPage/>}/>
           </Routes>
       {PublicPage && <Footer/>}
       </main>

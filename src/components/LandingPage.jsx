@@ -21,7 +21,9 @@ function LandingPage() {
           >
             <label >Ivan Dale Clarion</label>
             <p>Hello! I am Ivan and welcome to my portfolio.</p>
+            <Link to="/publicprojectPage">
             <button>Explore Projects</button>
+            </Link>
             <span className='flex gap-2 items-center justify-center my-2'>
               <Link target='_blank' to='https://web.facebook.com/ivan.clarion.2024'>
               <img src={Fb} alt="" />

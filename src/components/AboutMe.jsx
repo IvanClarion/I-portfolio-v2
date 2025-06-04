@@ -1,7 +1,16 @@
 import React from 'react'
 import Profile from '../assets/home/profile-2.svg'
 import { motion } from 'motion/react'
+import { Link } from 'react-router'
 function AboutMe() {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'src/assets/PDF/Resume_Clarion_Ivan.pdf';
+    link.download = 'Resume_Clarion_Ivan.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   return (
     <>
     <section className='aboutme-section'>
@@ -31,7 +40,7 @@ function AboutMe() {
             <p>Hi, I’m Ivan, an enthusiastic IT student with a passion for front-end development. I’m dedicated to honing my skills and creating engaging user experiences.</p>
             
             </article>
-            <button>Download CV</button>
+            <button onClick={handleDownload}>Download CV</button>
       </motion.div>
       <motion.div className='about-info-layout'
       initial={{y:10, opacity:0}}
@@ -53,7 +62,9 @@ function AboutMe() {
             <p>Web Developing</p>
             
             </article>
+            <Link to='/publiccertificates'>
             <button>Certificates</button>
+            </Link>
           </div>
       </motion.div>
       </div>

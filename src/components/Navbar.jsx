@@ -36,10 +36,12 @@ function Navbar() {
                 <label>Certificates</label>
             </li>
             </NavLink>
-            <li className='contact'>
+            <NavLink to='/publiccontact'>
+            <li className={location.pathname==='/publiccontact'? 'active-hover':''}>
                 <img src={Contacts} alt="" />
                 <label>Contacts</label>
             </li>
+            </NavLink>
            </ul>
       </motion.nav>
     </>

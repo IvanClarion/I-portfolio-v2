@@ -97,7 +97,7 @@ function ProjectContents() {
                <img src={PortfolioV1} alt="" />
                <article>
                   <header>Professional Portfolio Version 1</header>
-                  <summary>This Web App will turn your links or URL into QR code</summary>
+                  <summary>My first version of my professional portfolio.</summary>
                 </article>
                   <article className='project-other-info'>
                     <span className='flex items-center gap-1'>
