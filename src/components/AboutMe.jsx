@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 function AboutMe() {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = 'src/assets/PDF/Resume_Clarion_Ivan.pdf';
+    link.href = 'https://drive.google.com/uc?export=download&id=16kKbPmS6WiMBsGoMmrnlbiNSXJUR29Iz';
     link.download = 'Resume_Clarion_Ivan.pdf';
     document.body.appendChild(link);
     link.click();
